@@ -205,6 +205,20 @@ button {
 }
 .visually-hidden {
 }
+.features-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.features-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  margin-bottom: 8px;
+}
 /* What Are We Doing */
 .whatdoing {
   padding: 120px 0;
@@ -272,7 +286,27 @@ button {
   background-color: #ffffff;
 }
 .team-content {
-  padding: 32px 16px;
+  padding: 32px 16px 0 16px;
+}
+.ourteam-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+.ourteam-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--logo-color);
+  border-radius: 50px;
+  background-color: #4d5ae5;
+}
+.ourteam-icon {
 }
 /* Footer styles */
 .container-footer {
@@ -280,6 +314,7 @@ button {
   flex-direction: column;
 }
 .footer {
+  height: 312px;
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #2e2f42;
@@ -307,7 +342,32 @@ button {
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
-
+.media-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 132px;
+}
+.media-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--logo-color);
+  border-radius: 50px;
+  background-color: #4d5ae5;
+}
+.media-title {
+  padding-left: 540px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
 /* Portfolio style */
 .portfolio {
   padding: 96px 0 120px 0;
@@ -377,4 +437,44 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+/* Clients */
+.clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.clients-item {
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--hero-background);
+  border-radius: 10px;
+}
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2e2f42;
+  padding-top: 120px;
+  margin-bottom: 72px;
+}
+.clients-section {
+  padding-bottom: 120px;
+}
+.clients-link:hover {
+  border-color: #404bbf;
+}
+.clients-icon {
+  fill: rgba(142, 143, 153, 1);
+}
+.clients-link:hover .clients-icon {
+  fill: #404bbf;
 }
