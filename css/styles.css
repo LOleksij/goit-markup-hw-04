@@ -92,6 +92,7 @@ button {
   gap: 40px;
 }
 .header-link {
+  position: relative;
   padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
@@ -99,6 +100,17 @@ button {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #2e2f42;
+}
+.header-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--logo-color);
+  border-radius: 2px;
 }
 .header-link:hover,
 .header-link:focus {
@@ -309,6 +321,9 @@ button {
 .ourteam-icon {
 }
 /* Footer styles */
+.footer-container {
+  display: flex;
+}
 .container-footer {
   display: flex;
   flex-direction: column;
@@ -359,8 +374,8 @@ button {
   background-color: #4d5ae5;
 }
 .media-title {
-  padding-left: 540px;
-  display: flex;
+  margin-left: 120px;
+  display: inline-block;
   flex-direction: column;
   font-weight: 500;
   font-size: 16px;
@@ -477,4 +492,45 @@ button {
 }
 .clients-link:hover .clients-icon {
   fill: #404bbf;
+}
+/* Modal window */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 408px;
+  height: 584px;
+  background-color: rgba(252, 252, 252, 1);
+  border-radius: 4px;
+  background: var(--dairy, #fcfcfc);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+}
+.modal-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--cornflower, #e7e9fc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+.modal-icon {
 }
