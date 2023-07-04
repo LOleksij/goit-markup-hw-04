@@ -231,11 +231,16 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.features-list {
+.svg-icon {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  margin-bottom: 8px;
 }
+
 .features-item {
   display: flex;
   justify-content: center;
