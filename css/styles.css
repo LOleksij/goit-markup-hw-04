@@ -397,6 +397,8 @@ button {
 .media-container {
   display: flex;
   flex-direction: column;
+  align-items: baseline;
+  margin-right: 120px;
 }
 .media-link {
   display: flex;
@@ -414,7 +416,8 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--page-color);
+  margin-bottom: 16px;
 }
 .media-list {
   display: flex;
@@ -511,15 +514,6 @@ button {
 }
 .portfolio-item {
 }
-/* .overlay {
-  position: absolute;
-  transform: translateY(100%);
-  transition: transform 250ms ease-in-out;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
 .overlay-label {
   position: absolute;
   transform: translateY(100%);
