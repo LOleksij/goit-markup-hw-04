@@ -198,9 +198,13 @@ button {
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-btn:hover,
+.hero-btn:hover {
+  background-color: #404bbf;
+  border: none;
+}
 .hero-btn:focus {
   background-color: #404bbf;
+  border: none;
 }
 /* Description styles  */
 .visually-hidden {
@@ -619,6 +623,7 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn {
+  padding: 0;
   width: 24px;
   height: 24px;
   position: absolute;
@@ -632,6 +637,8 @@ button {
   justify-content: center;
   padding: 8px;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-icon {
 }
