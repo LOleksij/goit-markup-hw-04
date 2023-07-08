@@ -432,13 +432,13 @@ button {
   background-color: #31d0aa;
 }
 .media-title {
+  margin-bottom: 16px;
   margin-left: 120px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--page-color);
-  margin-bottom: 16px;
 }
 .media-list {
   display: flex;
