@@ -3,6 +3,7 @@ body {
   font-family: Roboto, sans-serif;
   color: #434455;
   background-color: #ffffff;
+  height: 100%;
 }
 :root {
   --page-color: #ffffff;
