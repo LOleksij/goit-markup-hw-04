@@ -384,12 +384,12 @@ button {
   color: #4d5ae5;
 }
 .footer-logo-list {
+  margin-right: 120px;
 }
 .footer-logo-studio {
   color: #f4f4fd;
 }
 .footer-list {
-  margin-right: 120px;
   width: 264px;
   height: 72px;
   font-weight: 400;
